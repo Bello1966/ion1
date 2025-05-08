@@ -13,13 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        target: [esp32, esp32c3]
-        display: [cu2, cu3]
+        target: [esp32c3]
+        display: [cu3]
         custom: [mini]
         include:
           - target: esp32c3
             display: cu3
-            custom: supermini
+            custom: mini
     steps:
     - name: Checkout repo
       uses: actions/checkout@v3
