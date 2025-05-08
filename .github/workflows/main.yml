@@ -15,7 +15,7 @@ jobs:
       matrix:
         target: [esp32, esp32c3]
         display: [cu2, cu3]
-        custom: [std]
+        custom: [mini]
         include:
           - target: esp32c3
             display: cu3
